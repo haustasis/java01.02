@@ -1,4 +1,4 @@
-package n2exercici3;
+package n1exercici3;
 /*
 Exercici 3. Escriu el codi per a generar i capturar una excepció de tipus ArrayIndexOutOfBoundsException.
  */
