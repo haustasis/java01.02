@@ -1,13 +1,23 @@
 package n1exercici1;
 
-/*
-Exercici 1. Crea una classe amb un main() que generi un objecte de la classe Exception dins d'un bloc try-catch.
-Proporciona al constructor de l'excepció un missatge especific. Captura l'excepció dins d'una clàusula catch
-i imprimeix el seu missatge. Afegeix una clàusula finally
-i imprimeix un missatge per a demostrar que va passar per allí.
- */
-
 public class App {
 
+    public static void main(String[] args) {
+
+        try {
+            divisio();
+        } catch (ArithmeticException ex) {
+            System.err.println("[-] Missatge especific de l'excepció: "+ ex.getMessage());
+        } finally {
+            System.out.println("[+] Finally");
+        }
+
+    }
+
+    static void divisio() throws ArithmeticException {
+        System.out.println("[+] Metode divisio");
+        int num = 10 / 0;
+        System.out.println(num);
+    }
 
 }
