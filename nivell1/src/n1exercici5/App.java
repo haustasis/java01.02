@@ -1,7 +1,15 @@
 package n1exercici5;
-/*
-Exercici 5. Defineix un comportament "erroni" utilitzant un bucle 'while'
-que es repeteixi fins que es deixi de generar una excepció.
- */
+
 public class App {
+
+    public static void main(String[] args) {
+
+        int arr[] = {1,2,3};
+        int num = 5;
+
+        while(arr.length < num) {
+            arr[num] = 0;
+            num--;
+        }
+    }
 }
