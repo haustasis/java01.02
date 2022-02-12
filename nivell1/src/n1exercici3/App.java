@@ -1,6 +1,15 @@
 package n1exercici3;
-/*
-Exercici 3. Escriu el codi per a generar i capturar una excepció de tipus ArrayIndexOutOfBoundsException.
- */
+
 public class App {
+
+    public static void main(String[] args) {
+
+        int arr[] = {1,2,3};
+
+        try {
+            System.out.println(arr[3]);
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            System.err.println("[-] Missatge Array out of Bounds: "+ ex.getMessage());
+        }
+    }
 }
